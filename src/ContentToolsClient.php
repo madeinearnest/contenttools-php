@@ -23,19 +23,11 @@ class ContentToolsClient
         Configuration::$oAuthAccessToken = $oAuthAccessToken ? $oAuthAccessToken : Configuration::$oAuthAccessToken;
     }
     /**
-     * Singleton access to API controller
-     * @return Controllers\APIController The *Singleton* instance
+     * Singleton access to Analysis controller
+     * @return Controllers\AnalysisController The *Singleton* instance
      */
-    public function getClient()
+    public function getAnalysis()
     {
-        return Controllers\APIController::getInstance();
-    }
-    /**
-     * Singleton access to API controller
-     * @return Controllers\APIController The *Singleton* instance
-     */
-    public function getClient()
-    {
-        return Controllers\APIController::getInstance();
+        return Controllers\AnalysisController::getInstance();
     }
 }
